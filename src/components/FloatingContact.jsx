@@ -9,7 +9,7 @@ const CONTACT_LINKS = [
     id: 'messenger',
     label: 'Messenger',
     icon: <FaFacebookMessenger />,
-    href: 'https://m.me/fardunatajkia', // update if needed
+    href: 'https://m.me/aria.jannat.14', // update if needed
     color: '#0084ff',
     bg: 'linear-gradient(135deg, #0084ff, #00c6ff)',
   },
@@ -17,7 +17,7 @@ const CONTACT_LINKS = [
     id: 'whatsapp',
     label: 'WhatsApp',
     icon: <FaWhatsapp />,
-    href: 'https://wa.me/8801XXXXXXXXX', // update with real number
+    href: 'https://wa.me/8801820908388', // update with real number
     color: '#25d366',
     bg: 'linear-gradient(135deg, #25d366, #128c7e)',
   },
