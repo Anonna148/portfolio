@@ -1,0 +1,87 @@
+/* Reuse timeline styles or define them if not global */
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--accent-primary) 20%, var(--accent-secondary) 80%, transparent);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 45%;
+  margin-bottom: 3rem;
+}
+
+.timeline-item--left  { margin-left: 0; text-align: right; }
+.timeline-item--right { margin-left: 55%; text-align: left; }
+
+.timeline-dot {
+  position: absolute;
+  top: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.1rem;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  z-index: 2;
+}
+
+.timeline-item--left  .timeline-dot { right: -75px; }
+.timeline-item--right .timeline-dot { left: -75px; }
+
+/* ── Experience Card ────────────────────────── */
+.exp-card {
+  padding: 1.75rem;
+}
+
+.exp-card__year {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  margin-bottom: 0.6rem;
+}
+
+.exp-card__role {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.exp-card__company {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.exp-card__desc {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline-line { left: 20px; }
+  .timeline-item { width: calc(100% - 60px); margin-left: 60px !important; text-align: left; }
+  .timeline-dot  { left: -55px !important; right: auto !important; top: 20px; }
+}
