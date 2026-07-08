@@ -124,7 +124,7 @@ export default function Hero() {
           <div className="hero__frame">
             <div className="hero__frame-border">
               <img
-                src={profile.hero_image_url || profile.photo_url || profileImg}
+                src={profile.hero_image_url || profile.photo_url}
                 alt={profile.name}
                 className="hero__img"
               />
