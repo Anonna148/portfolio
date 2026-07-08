@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { HiDownload, HiArrowRight } from 'react-icons/hi'
 import { supabase } from '../lib/supabase'
-const profileImg = '/images/profile.png'
+// const profileImg = '/images/profile.png'
 import './Hero.css'
 
 const FALLBACK_ROLES = [
